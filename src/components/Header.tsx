@@ -12,7 +12,7 @@ const Header = ({ onSectionChange }: HeaderProps) => {
         <ul className="flex space-x-4">
           <li>
             <button
-              onClick={() => onSectionChange('daily')}
+              onClick={() => onSectionChange("daily")}
               className="px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Daily Forecast
@@ -20,7 +20,7 @@ const Header = ({ onSectionChange }: HeaderProps) => {
           </li>
           <li>
             <button
-              onClick={() => onSectionChange('weekly')}
+              onClick={() => onSectionChange("weekly")}
               className="px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Weekly Forecast
@@ -28,7 +28,7 @@ const Header = ({ onSectionChange }: HeaderProps) => {
           </li>
           <li>
             <button
-              onClick={() => onSectionChange('monthly')}
+              onClick={() => onSectionChange("monthly")}
               className="px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Monthly Forecast
@@ -36,7 +36,7 @@ const Header = ({ onSectionChange }: HeaderProps) => {
           </li>
           <li>
             <button
-              onClick={() => onSectionChange('world')}
+              onClick={() => onSectionChange("world")}
               className="px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
             >
               World Forecast

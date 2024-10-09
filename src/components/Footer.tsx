@@ -4,6 +4,6 @@ const Footer = () => {
       <p className="text-sm">&copy; 2024 WeatherApp. All Rights Reserved.</p>
     </footer>
   );
-}
+};
 
 export default Footer;
