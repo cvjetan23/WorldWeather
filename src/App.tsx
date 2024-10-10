@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import { useState } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const App = () => {
-  const [section, setSection] = useState('daily');
+  const [section, setSection] = useState("daily");
 
   const renderSection = () => {
     switch (section) {
-      case 'daily':
+      case "daily":
         return <h2>Daily Forecast</h2>;
-      case 'weekly':
+      case "weekly":
         return <h2>Weekly Forecast</h2>;
-      case 'monthly':
+      case "monthly":
         return <h2>Monthly Forecast</h2>;
-      case 'world':
+      case "world":
         return <h2>World Forecast</h2>;
       default:
         return <h2>Daily Forecast</h2>;
