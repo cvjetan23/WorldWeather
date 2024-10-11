@@ -13,8 +13,6 @@ const App = () => {
         return <h2>Weekly Forecast</h2>;
       case "monthly":
         return <h2>Monthly Forecast</h2>;
-      case "world":
-        return <h2>World Forecast</h2>;
       default:
         return <h2>Daily Forecast</h2>;
     }
