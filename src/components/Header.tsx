@@ -11,32 +11,28 @@ const Header = ({ onSectionChange }: HeaderProps) => {
       <nav>
         <ul className="flex space-x-4">
           <li>
-            <button
-              onClick={() => onSectionChange("daily")}
+            <button onClick={() => onSectionChange("daily")}
               className="px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Daily Forecast
             </button>
           </li>
           <li>
-            <button
-              onClick={() => onSectionChange("weekly")}
+            <button onClick={() => onSectionChange("weekly")}
               className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Weekly Forecast
             </button>
           </li>
           <li>
-            <button
-              onClick={() => onSectionChange("monthly")}
+            <button onClick={() => onSectionChange("monthly")}
               className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Monthly Forecast
             </button>
           </li>
           <li>
-            <button
-              onClick={() => onSectionChange("world")}
+            <button onClick={() => onSectionChange("world")}
               className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
             >
               World Forecast
