@@ -1,29 +1,42 @@
 import { useState } from "react";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { useWeather } from "./hooks/useWeather";
 
 const App = () => {
-  const [section, setSection] = useState("daily");
+  const [location, setLocation] = useState("Belgrade");
+  const { weatherData, loading, error } = useWeather(location);
 
-  const renderSection = () => {
-    switch (section) {
-      case "daily":
-        return <h2>Daily Forecast</h2>;
-      case "weekly":
-        return <h2>Weekly Forecast</h2>;
-      case "monthly":
-        return <h2>Monthly Forecast</h2>;
-      default:
-        return <h2>Daily Forecast</h2>;
-    }
+  const handleLocationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setLocation(e.target.value);
   };
 
   return (
-    <>
-      <Header onSectionChange={setSection} />
-      <main>{renderSection()}</main>
-      <Footer />
-    </>
+    <div className="App">
+      <header>
+        <h1>Weather App</h1>
+        <input
+          type="text"
+          value={location}
+          onChange={handleLocationChange}
+          placeholder="Enter city"
+        />
+      </header>
+      <main>
+        {loading && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+        {weatherData && (
+          <div>
+            <h2>
+              {weatherData.location.name}, {weatherData.location.country}
+            </h2>
+            <p>Temperature: {weatherData.current.temp_c}°C</p>
+            <p>Condition: {weatherData.current.condition.text}</p>
+            <img src={weatherData.current.condition.icon} alt="Weather icon" />
+            <p>Humidity: {weatherData.current.humidity}%</p>
+            <p>Wind Speed: {weatherData.current.wind_kph} kph</p>
+          </div>
+        )}
+      </main>
+    </div>
   );
 };
 
