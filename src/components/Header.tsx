@@ -13,7 +13,7 @@ const Header = ({ onSectionChange }: HeaderProps) => {
           <li>
             <button
               onClick={() => onSectionChange("daily")}
-              className="px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
+              className="px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-400 transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Daily Forecast
             </button>
@@ -21,7 +21,7 @@ const Header = ({ onSectionChange }: HeaderProps) => {
           <li>
             <button
               onClick={() => onSectionChange("weekly")}
-              className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
+              className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Weekly Forecast
             </button>
@@ -29,7 +29,7 @@ const Header = ({ onSectionChange }: HeaderProps) => {
           <li>
             <button
               onClick={() => onSectionChange("monthly")}
-              className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
+              className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white"
             >
               Monthly Forecast
             </button>
@@ -37,7 +37,7 @@ const Header = ({ onSectionChange }: HeaderProps) => {
           <li>
             <button
               onClick={() => onSectionChange("world")}
-              className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
+              className="px-4 py-2 rounded-md bg-blue-400 hover:bg-blue-300 transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white"
             >
               World Forecast
             </button>
