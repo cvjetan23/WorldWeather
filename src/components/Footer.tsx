@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 const Footer = () => {
   return (
     <footer className="bg-gray-700 text-white py-4 text-center">

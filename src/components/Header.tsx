@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 type HeaderProps = {
   onSectionChange: (section: string) => void;
 };
