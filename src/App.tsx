@@ -11,7 +11,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-blue-200 flex flex-col items-center justify-center">
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Weather App</h1>
         <input
